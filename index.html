@@ -4,87 +4,95 @@
     <head>
         <title>Animal Fayre</title>
         <link rel="icon" href="imgs/animal fayre logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
-  </style>
-  </head>
-  <!-- This section of code is the header of the page, which includes the titles of each page that act as navigation on the website.  -->
-  <body>
-    <header>
-      <div class="row navbar">
-        <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
-        <div class="one column"><a href="index.html">Home</a></div>
-        <div class="one column"><a href="find.html">Find</a></div>
-        <div class="one column"><a href="donate.html">Donate</a></div>
-        <div class="one column"><a href="about.html">About</a></div>
-        <div id="logInBtns" class="two columns right">
-          <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
-          <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
-        </div>  
-      </div>
-    </header>
-    <!-- This section of code allows there to be text placed on the website that will also be evenly spaced out. -->
-    <div class="container">
-      <div class="row">
-        <div class="five columns">
-          <img id="animalImage" src="imgs/afIMG1.png" alt="Dog 1" width="300" height="300">
+    </head>
+    <!-- This section of code is the header of the page, which includes the titles of each page that act as navigation on the website.  -->
+    <body>
+        <header>
+            <div class="row navbar">
+                <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
+                <div class="one column"><a href="index.html">Home</a></div>
+                <div class="one column"><a href="find.html">Find</a></div>
+                <div class="one column"><a href="donate.html">Donate</a></div>
+                <div class="one column"><a href="about.html">About</a></div>
+                <div id="logInBtns" class="two columns right">
+                    <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
+                    <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                </div>  
+            </div>
+        </header>
+        <!-- This section of code allows there to be text placed on the website that will also be evenly spaced out. -->
+        <div class="container">
+            <h2>Home</h2>
+            <hr>
+            <div class="row">
+                <div class="five columns">
+                    <img id="animalImage" src="imgs/afIMG1.png" alt="Dog 1" width="300" height="300">
+                </div>
+                <div id="introText" class="seven columns">
+                    <p>
+                        Welcome to Animal Fayre! A site devoted to all animals and their owners.
+                        We hope we can help families who are struggling to feed the animals they love by giving them a place to come for assistance,
+                        and also give a place for people who wish to help others a place to advertise any food they may have that they don't need.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="introText" class="seven columns">
+                    <p>
+                        The coronavirus pandemic has been extremely financially difficult on families all around the country. This financial difficulty 
+                        will for many affect people's ability to buy food for their little furry (or scaley) friend. With Animal Fayre we hope we can give 
+                        people who are struggling to feed their pets a place to come and get food from people who are willing to share, because all animals 
+                        deserve to be treated fairly. 
+                    </p>
+                </div>
+                <div class="five columns">
+                    <img id="animalImage" src="imgs/afIMG5.png" alt="Cat" width="300" height="300">
+                </div>
+            </div>
+            <div class="row">
+                <div class="five columns">
+                    <img id="animalImage" src="imgs/afIMG4.png" alt="Bird" width="300" height="300">
+                </div>
+                <div id="introText" class="seven columns">
+                    <p>
+                        When making Animal Fayre it was important for us to think about all animals, not just dogs, cats, rabbits and other fluffy varieties. 
+                        So we also welcome donations for reptiles, birds, fish and any other type of animal. When making the donation just select the category 
+                        of animal that best suits your pet and if you're not sure just choose exotic.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div id="introText" class="seven columns">
-          <p>
-            Welcome to Animal Fayre! A site devoted to all animals and their owners.
-            We hope we can help families who are struggling to feed the animals they love by giving them a place to come for assistance,
-            and also give a place for people who wish to help others a place to advertise any food they may have that they don't need.
-          </p>
+        <div class="footer">
+            <div id="insideFooter">
+                <div class="row">
+                    <div class="four columns">
+                        <img id="footerLogo" src="imgs/animal fayre logo.png">
+                    </div>
+                    <div class="four columns">
+                        <img id="footerImg" src="imgs/afIMG6.png" alt="Dog and Cat">
+                        <img id="footerImg" src="imgs/afIMG7.png" alt="Rabbit">
+                    </div>
+                    <div id="footerLinks" class="four columns right">
+                        <h4>Links:</h4>
+                        <a href="https://firebase.google.com/">Firebase</a><br>
+                        <a href="https://www.pexels.com/">Pexels</a><br>
+                        <a href="http://getskeleton.com/">Skeleton.css</a><br>
+                        <a href="https://necolas.github.io/normalize.css/">Normalize.css</a><br>
+                        <a href="https://what3words.com/">What 3 Words</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="introText" class="seven columns">
-          <p>
-            The coronavirus pandemic has been extremely financially difficult on families all around the country. This financial difficulty 
-            will for many affect people's ability to buy food for their little furry (or scaley) friend. With Animal Fayre we hope we can give 
-            people who are struggling to feed their pets a place to come and get food from people who are willing to share, because all animals 
-            deserve to be treated fairly. 
-          </p>
-        </div>
-        <div class="five columns">
-          <img id="animalImage" src="imgs/afIMG5.png" alt="Cat" width="300" height="300">
-        </div>
-      </div>
-      <div class="row">
-        <div class="five columns">
-          <img id="animalImage" src="imgs/afIMG4.png" alt="Bird" width="300" height="300">
-        </div>
-        <div id="introText" class="seven columns">
-          <p>
-            When making Animal Fayre it was important for us to think about all animals, not just dogs, cats, rabbits and other fluffy varieties. 
-            So we also welcome donations for reptiles, birds, fish and any other type of animal. When making the donation just select the category 
-            of animal that best suits your pet and if you're not sure just choose exotic.
-          </p>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div id="insideFooter">
-        <div class="row">
-          <div class="four columns">
-            <img id="footerLogo" src="imgs/animal fayre logo.png" width="30%">
-          </div>
-          <div id="copyright" class="four columns">
+        <div id="copyright">
             <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
-          </div>
-          <div id="footerLinks" class="four columns right">
-            <h4>Links:</h4>
-            <a href="https://firebase.google.com/">Firebase</a><br>
-            <a href="https://www.pexels.com/">Pexels</a><br>
-            <a href="http://getskeleton.com/">Skeleton.css</a><br>
-            <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>
-          </div>
         </div>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+        <script src="js/script.js"></script>
+    </body>
 </html>

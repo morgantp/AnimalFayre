@@ -6,4 +6,4 @@ window.onload = function() {
     const date = new Date();
     const autoDate = document.querySelector('#autoDate');
     autoDate.textContent = date.getFullYear();
-  };
+};

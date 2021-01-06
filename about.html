@@ -1,39 +1,95 @@
 <!DOCTYPE html> 
 <html lang="en">
 <html>
-  <head>
-    <title>About Us</title>
-    <link rel="icon" href="imgs/animal fayre logo.png">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+    <head>
+        <title>About Us</title>
+        <link rel="icon" href="imgs/animal fayre logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    </head>
     <!-- This section of code is the header of the page, which includes the titles of each page that act as navigation on the website.  -->
-  <body>
-    <header>
-      <div class="row navbar">
-        <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
-        <div class="one column"><a href="index.html">Home</a></div>
-        <div class="one column"><a href="find.html">Find</a></div>
-        <div class="one column"><a href="donate.html">Donate</a></div>
-        <div class="one column"><a href="about.html">About</a></div>
-        <div id="logInBtns" class="two columns right">
-          <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
-          <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
-        </div>  
-      </div>
-    </header>
-    
-    <!-- This section of code contains images that have been placed onto the page. -->
-    <div id="gallery">
-      <img src="imgs/afIMG1.png" alt="Dog 1" width="200" height="200">
-      <img src="imgs/afIMG2.png" alt="Dog 2" width="200" height="200">
-      <img src="imgs/afIMG3.png" alt="Guinea Pigs" width="200" height="200">
-      <img src="imgs/afIMG4.png" alt="Bird" width="200" height="200">
-      <img src="imgs/afIMG5.png" alt="Cat" width="200" height="200">
-      <img src="imgs/afIMG6.png" alt="Dog and Cat" width="200" height="200">
-      <img src="imgs/afIMG7.png" alt="Rabbit" width="200" height="200">
-    </div>
-  </body>
-  <script src="js/script.js"></script>
+    <body>
+        <header>
+            <div class="row navbar">
+                <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
+                <div class="one column"><a href="index.html">Home</a></div>
+                <div class="one column"><a href="find.html">Find</a></div>
+                <div class="one column"><a href="donate.html">Donate</a></div>
+                <div class="one column"><a href="about.html">About</a></div>
+                <div id="logInBtns" class="two columns right">
+                    <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
+                    <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                </div>  
+            </div>
+        </header>
+        <div class="container">
+            <h2>About Us</h2>
+            <hr>
+            <div class="row">
+                <div id="aboutUsTxt">
+                    <p>
+                        We are all final year students at Plymouth University studying varying digital design courses. We started work on this project 
+                        in October. This is a topic we all feel very strongly about. No animal and deserves to go hungry, and no owner deserves to struggle 
+                        feeding a family member who offers so much unconditional love. We hope Animal Fayre can offer people some hope during a period of 
+                        such turmoil. Because we truly believe all pets deserve to be treated fairly. So whether you're here to receive or give we thank you 
+                        for helping animals in need.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div id="aboutUs" class="row">
+                <div class="three columns">
+                    <img id="devImgs" src="imgs/richardIMG.jpg">
+                    <h4>Richard Bargery-Stroud</h4>
+                    <p>Internet Design</p>
+                </div>
+                <div class="three columns">
+                    <img id="devImgs" src="imgs/nickIMG.jpg">
+                    <h4>Nicholas Barker</h4>
+                    <p>Internet Design</p>
+                </div>
+                <div class="three columns">
+                    <img id="devImgs" src="imgs/mattIMG.jpg">
+                    <h4>Matthew Gammage</h4>
+                    <p>Digital Media Design</p>
+                </div>
+                <div class="three columns">
+                    <img id="devImgs" src="imgs/morganIMG.jpg">
+                    <h4>Morgan Thomas-Price</h4>
+                    <p>Digital Media Design</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div id="insideFooter">
+                <div class="row">
+                    <div class="four columns">
+                        <img id="footerLogo" src="imgs/animal fayre logo.png">
+                    </div>
+                    <div class="four columns">
+                        <img id="footerImg" src="imgs/afIMG3.png" alt="Dog and Cat">
+                        <img id="footerImg" src="imgs/afIMG1.png" alt="Rabbit">
+                    </div>
+                    <div id="footerLinks" class="four columns right">
+                        <h4>Links:</h4>
+                        <a href="https://firebase.google.com/">Firebase</a><br>
+                        <a href="https://www.pexels.com/">Pexels</a><br>
+                        <a href="http://getskeleton.com/">Skeleton.css</a><br>
+                        <a href="https://necolas.github.io/normalize.css/">Normalize.css</a><br>
+                        <a href="https://what3words.com/">What 3 Words</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
+        </div>
+        <script src="js/script.js"></script> 
+    </body>
 </html>

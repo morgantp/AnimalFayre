@@ -1,24 +1,51 @@
 <!DOCTYPE html> 
 <html lang="en">
 <html>
-  <head>
-    <title>Sign Up</title>
-    <link rel="icon" href="imgs/animal fayre logo.png">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <header>
-      <div class="row navbar">
-        <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
-        <div class="one column"><a href="index.html">Home</a></div>
-        <div class="one column"><a href="find.html">Find</a></div>
-        <div class="one column"><a href="donate.html">Donate</a></div>
-        <div class="one column"><a href="about.html">About</a></div> 
-      </div>
-    </header>
-    <!-- This code generates forms for a person to fill in with specific details so that they can sign up to the website. -->
-    <script src="js/script.js"></script>
-  </body>
+    <head>
+        <title>Sign Up</title> 
+        <link rel="icon" href="imgs/animal fayre logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="row navbar">
+                <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
+                <div class="one column"><a href="index.html">Home</a></div>
+                <div class="one column"><a href="find.html">Find</a></div>
+                <div class="one column"><a href="donate.html">Donate</a></div>
+                <div class="one column"><a href="about.html">About</a></div> 
+            </div>
+        </header>
+        <div class="footer">
+            <div id="insideFooter">
+                <div class="row">
+                    <div class="four columns">
+                        <img id="footerLogo" src="imgs/animal fayre logo.png">
+                    </div>
+                    <div class="four columns">
+                        <img id="footerImg" src="imgs/afIMG3.png" alt="Dog and Cat">
+                        <img id="footerImg" src="imgs/afIMG6.png" alt="Rabbit">
+                    </div>
+                    <div id="footerLinks" class="four columns right">
+                        <h4>Links:</h4>
+                        <a href="https://firebase.google.com/">Firebase</a><br>
+                        <a href="https://www.pexels.com/">Pexels</a><br>
+                        <a href="http://getskeleton.com/">Skeleton.css</a><br>
+                        <a href="https://necolas.github.io/normalize.css/">Normalize.css</a><br>
+                        <a href="https://what3words.com/">What 3 Words</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
 </html>
