@@ -13,6 +13,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 const auth = firebase.auth();
+var provider = new firebase.auth.GithubAuthProvider();
 
 function signOut() {
     auth.signOut();
