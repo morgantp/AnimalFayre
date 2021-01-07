@@ -21,6 +21,21 @@
                 <div class="one column"><a href="about.html">About</a></div>
             </div>
         </header>
+        <div class="container">
+            <h2>Log In</h2>
+            <hr>
+            <div id="signInForm">
+                <input type="email" id="emailField2" placeholder="Enter Email..."><br>
+                <input type="password" id="passwordField2" placeholder="Enter Password..."><br>
+                <button onclick="signIn()">Sign In</button>
+                <button id="forgotButton" onclick="forgotPassword()">Forgot Password?</button>
+            </div>
+            <div id="passwordPopup">
+                <input type="email" id="resetPassword" placeholder="Enter Email..."><br>
+                <button onclick="resetPassword()">Submit</button>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
         <div class="footer">
             <div id="insideFooter">
                 <div class="row">
@@ -45,6 +60,11 @@
         <div id="copyright">
             <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+        <script src="js/userCheck.js"></script>
+        <script src="js/firebase.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

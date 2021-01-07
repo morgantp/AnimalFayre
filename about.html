@@ -22,11 +22,14 @@
                 <div class="one column"><a href="donate.html">Donate</a></div>
                 <div class="one column"><a href="about.html">About</a></div>
                 <div id="logInBtns" class="two columns right">
-                    <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
-                    <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                    <button id="signIn" type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
+                    <button id="signUp" type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                    <button id="signOut" type="button" class="log" onclick="signOut()">Log Out</button>
+                    <button onclick="sendVerification()" class="log" id="verificationButton">Send Verification</button>
                 </div>  
             </div>
         </header>
+        <div id="welcomeText"></div>
         <div class="container">
             <h2>About Us</h2>
             <hr>
@@ -34,7 +37,7 @@
                 <div id="aboutUsTxt">
                     <p>
                         We are all final year students at Plymouth University studying varying digital design courses. We started work on this project 
-                        in October. This is a topic we all feel very strongly about. No animal and deserves to go hungry, and no owner deserves to struggle 
+                        in October 2020. This is a topic we all feel very strongly about. No animal deserves to go hungry, and no owner deserves to struggle 
                         feeding a family member who offers so much unconditional love. We hope Animal Fayre can offer people some hope during a period of 
                         such turmoil. Because we truly believe all pets deserve to be treated fairly. So whether you're here to receive or give we thank you 
                         for helping animals in need.
@@ -90,6 +93,10 @@
         <div id="copyright">
             <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+        <script src="js/firebase.js"></script>
         <script src="js/script.js"></script> 
     </body>
 </html>

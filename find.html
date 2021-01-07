@@ -22,11 +22,19 @@
                 <div class="one column"><a href="donate.html">Donate</a></div>
                 <div class="one column"><a href="about.html">About</a></div>
                 <div id="logInBtns" class="two columns right">
-                    <button type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
-                    <button type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                    <button id="signIn" type="button" class="log" onclick="document.location='logIn.html'">Log In</button>
+                    <button id="signUp" type="button" class="log" onclick="document.location='signUp.html'">Sign Up</button>
+                    <button id="signOut" type="button" class="log" onclick="signOut()">Log Out</button>
+                    <button onclick="sendVerification()" class="log" id="verificationButton">Send Verification</button>
                 </div>  
             </div>
         </header>
+        <div id="welcomeText"></div>
+        <div id="listingContainer">
+            <div class="row">
+                <div id="listingDonations"></div>
+            </div>
+        </div> 
         <div class="footer">
             <div id="insideFooter">
                 <div class="row">
@@ -51,6 +59,12 @@
         <div id="copyright">
             <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="/js/listing.js"></script>    
         <script src="js/script.js"></script>
     </body>
 </html>

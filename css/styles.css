@@ -30,7 +30,7 @@ header {
 }
 
 .log {
-    width: 150px;
+    width: 170px;
 }
 
 .logo {
@@ -49,6 +49,11 @@ button:hover {
     transition: 0.5s;
 }
 /* Navbar Code ends */
+
+#welcomeText {
+    text-align: right;
+    padding-right: 5px;
+}
 
 body {
     background-color: rgb(231, 230, 230);
@@ -103,6 +108,57 @@ hr {
 #devImgs {
     width: 200px;
     border-radius: 50%;
+}
+
+#signInForm input {
+    text-align: center;
+    width: 50%;
+    margin-top: 15px;
+}
+
+#signInForm button {
+    width: 24%;
+    margin-top: 15px;
+}
+
+#signUpForm input {
+    text-align: center;
+    width: 50%;
+    margin-top: 15px;
+}
+
+#signUpForm button {
+    width: 24%;
+    margin-top: 15px;
+}
+
+#passwordPopup {
+    display: none;
+}
+
+#passwordPopup input {
+    text-align: center;
+    width: 50%;
+    margin-top: 15px;
+}
+
+#passwordPopup button {
+    width: 24%;
+    margin-top: 15px;
+}
+
+#donationItem {
+    justify-content: center;
+    width: 100%;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 5px;
 }
 
 #footerLogo {
