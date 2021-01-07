@@ -11,7 +11,7 @@ rootRef.on("child_added", snap => {
 
 
     $("#listingDonations").append(
-        "<div class='four columns'><div id='donationItem'><p><b>Type of Food:</b> " + food + "</p><p><b>Type of Animal:</b> " + animal + "</p><p><b>Expiration Date:</b> " + expire + "</p><p><b>Travel Distance:</b> " + travel + "</p><p><b>Contact Details:</b> " + contact + "</p><p><b>Preferred Contact Time:</b> " + time + "</p><a href='https://www.what3words.com/"+ location +"'>Location</a></div></div>"
+        "<div id='donationBox' class='three columns'><div id='donationItem'><p><b>Type of Food:</b> " + food + "</p><p><b>Type of Animal:</b> " + animal + "</p><p><b>Expiration Date:</b> " + expire + "</p><p><b>Travel Distance:</b> " + travel + "</p><p><b>Contact Details:</b> " + contact + "</p><p><b>Preferred Contact Time:</b> " + time + "</p><a href='https://www.what3words.com/"+ location +"'>Location</a></div></div>"
     );
 })
 

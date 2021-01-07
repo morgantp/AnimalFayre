@@ -3,12 +3,13 @@
 <html>
   <head>
         <title>Donate</title>
-        <link rel="icon" href="imgs/animal fayre logo.png">
+        <link rel="icon" href="/imgs/animal fayre logo.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/skeleton.css">
+        <link rel="stylesheet" href="/css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
     </head>
@@ -16,7 +17,7 @@
     <body>
         <header>
             <div class="row navbar">
-                <div class="one column logo"><img src="imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
+                <div class="one column logo"><img src="/imgs/animal fayre logo writing only.png" alt="Animal Fayre" width="100" height="75"></div>
                 <div class="one column"><a href="index.html">Home</a></div>
                 <div class="one column"><a href="find.html">Find</a></div>
                 <div class="one column"><a href="donate.html">Donate</a></div>
@@ -31,11 +32,13 @@
         </header>
         <div id="welcomeText"></div>
         <div class="container">
+            <h2>Donate</h2>
+            <hr>
             <div id="donationForm">
-                <p>Enter Food Info (i.e name on packaging)</p>
+                <h5>Food Name? Brand, Name on Packaging?</h5>
                 <input type="text" id="foodType" placeholder="Enter Food Name...">
         
-                <p>What type of animal food is it? (if the animal is not listed please select exotic)</p>
+                <h5>What Type of Animal is the Food for? (If Not Listed Please Select Exotic)</h5>
                 <select id="animalType">
                     <option>Dog</option>
                     <option>Cat</option>
@@ -45,21 +48,21 @@
                     <option>Exotic</option>
                 </select>
         
-                <p>What is the expiration date on the packaging?</p>
+                <h5>What Is The Expiration Date</h5>
                 <input type="date" id="expirationDate">
         
-                <p>Would you willing to deliver? if so how far are you willing to travel?</p>
+                <h5>Would You Be Willing To Deliver? If So How far?</h5>
                 <input type="text" id="travelDistance" placeholder="Enter Distance in Miles...">
         
-                <p>Where would the pick up point be? (please input location using <a href="https://what3words.com/">what3words</a>)</p>
+                <h5>Where would the pick up point be? (please input location using <a href="https://what3words.com/">what3Words</a>)</h5>
                 <input type="text" id="what3wordsLocation" placeholder="example.example.example">
         
-                <p>How would you like to be contacted? (i.e phone number, email)</p>
+                <h5>How would you like to be contacted? (phone number, email)</h5>
                 <input type="text" id="contactPreference" placeholder="Enter Number or Email...">
         
-                <p>What time is best for someone to contact you?</p>
+                <h5>What time is best for someone to contact you?</h5>
                 <input type="time" id="timePreference">
-        
+                <br>
                 <button onclick="submitDonation()">Submit</button>
             </div>
         </div>
@@ -88,6 +91,7 @@
         <div id="copyright">
             <p class="text-center">Copyright &copy; <span id="autoDate"></span> Animal Fayre</p>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>

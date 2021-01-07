@@ -34,6 +34,6 @@ function submitDonation() {
             location: document.getElementById("what3wordsLocation").value,
             contact: document.getElementById("contactPreference").value,
             time: document.getElementById("timePreference").value
-        })
+        }); 
     }
 }

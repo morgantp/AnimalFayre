@@ -155,8 +155,6 @@ hr {
     border-radius: 15px;
     margin-top: 5px;
     margin-bottom: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
     padding-top: 1px;
     padding-bottom: 5px;
 }
@@ -170,6 +168,36 @@ hr {
 #insideFooter {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#donationForm {
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 12%;
+    padding: 15px;
+}
+
+#donationForm input, select {
+    text-align: center;
+    width: 50%;
+}
+
+#donationForm h5 {
+    text-transform: capitalize;
+}
+
+#donationForm button {
+    width: 24%;
+    margin-top: 15px;
+}
+
+#donationBox {
+    text-align: center;
+    width: 375px;
+    height: 355px;
+    padding-left: 30px;
+    margin-left: 0px;
 }
 
 #footerImg {

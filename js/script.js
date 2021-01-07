@@ -42,10 +42,7 @@ function verificationButton() {
   var user = firebase.auth().currentUser;
   var emailVerified = user.emailVerified;
   if(emailVerified) {
-      verifiedCheck.textContent = ' ';
       document.getElementById("verificationButton").style.display = "none";        
-  } else {
-      verifiedCheck.textContent = "You are not verified. Please complete verification to access donations and listings.";
   }
 }
 
