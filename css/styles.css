@@ -150,13 +150,48 @@ hr {
 #donationItem {
     justify-content: center;
     width: 100%;
-    background-color: darkgray;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
     margin-top: 5px;
     margin-bottom: 30px;
-    padding-top: 1px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#donationItem hr {
+    width: 80%;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+#donationAnimal{
+    font-size: 50px;
+    font-family: 'Rancho', cursive;
+    margin-bottom: 0px;
+}
+
+#locationBtn {
+    background-color: #D6EDFF;
+    color: #251605;
+    border-width: 2px;
+    border-color: #251605;
+}
+
+#locationBtn:hover {
+    background-color: #F6FEAA;
+    transition: 0.5s;
+
+}
+
+#listHeading {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-family: 'Rancho', cursive;
+}
+
+#listContents {
+    font-size: 15px;
 }
 
 #footerLogo {
@@ -195,7 +230,7 @@ hr {
 #donationBox {
     text-align: center;
     width: 375px;
-    height: 355px;
+    height: 650px;
     padding-left: 30px;
     margin-left: 0px;
 }

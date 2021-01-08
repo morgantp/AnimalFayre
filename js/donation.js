@@ -34,6 +34,12 @@ function submitDonation() {
             location: document.getElementById("what3wordsLocation").value,
             contact: document.getElementById("contactPreference").value,
             time: document.getElementById("timePreference").value
-        }); 
+        });
+        setTimeout(function(){redirect();}, 1000);
     }
+}
+
+function redirect() {
+    alert("Donation Saved! Thank you for you generosity")
+    window.location = '/index.html';
 }
